@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: 0 !important;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.first-part{
+    display: flex;
+    padding-left: 40px;
+}
+.first-part .img-logo{
+    width: 100px;
+    height: 50px;
+    padding-left: 20px;
+}
+.container .first-part{
+    margin-left: -120px;
+}
+.first-part .logo{
+    color: rgb(148, 144, 144);
+    font-size: 10px;
+    position: relative;
+    top: -9px;
+}
+.first-part2{
+   margin-top: 5px; 
+}
+.first-part2 input{
+    width: 400px;
+}
+.first-part3 button .notification{
+    margin-left: -120px;
+}
+#video{
+    border: none;
+}
+#notify{
+    border: none;
+}
+#avatar-btn{
+    border: none;
+}
+.container .first-part3{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-right: -100px;
+}
+img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.container .number{
+    position: absolute;
+    font-size: 10px;
+    background-color: #c00;
+    color: #fff;
+    border-radius: 100%;
+    width: 15px;
+}
+.fa-keyboard{
+    position:absolute;
+    top: 11px;
+    left: 819px;
+    opacity: 0.6;
+    margin-top: 5px;
+}
+.container .btn-magnifying-glass:hover{
+    background-color: rgb(233, 228, 228);
+}
+.container .btn-magnifying-glass{
+    border: 1px solid #767676;
+}
+.btn{
+    --bs-btn-border-radius: 0px !important;
+}
+#bars{
+    border: none;
+}
+#mic{
+    border: none;
+}
+.bottom-item{
+    display: flex;
+    margin-left: 300px;
+    margin-top: 11px;
+}
+.bottom-item div button{
+    border-radius: 15px;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    padding: 4px;
+    margin-right: 20px;
+}
+.bottom-item div :hover{
+    background-color: #dfdada;
+}
+.title{
+    display: flex;
+}
+.menu{
+    max-height: 50px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+.home-page{
+    text-align: center;
+    margin-bottom:25px ;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.home-page :hover{
+   background-color: rgb(226, 231, 228);
+}
+.home-page button{
+    border: none;
+    background-color: #fff;
+    color: black;
+    font-weight: 50px;
+}
+.home-page img{
+    width: 40px;
+    height: 40px;
+}
+.content{
+    margin-top: 10px;
+    border-top: 1px solid #e3e1e1;
+    margin-left: 0px !important;
+    width: 1400px;
+}
+.content a{
+        color: var(--bs-link-color);
+        text-decoration: initial;
+}
+.boder-content{
+    border-top: 1px solid rgb(202, 189, 189);
+   }
+.content{
+    display: grid;
+    grid-template-columns: 310px 310px 310px 310px;
+    grid-template-rows: 300px 300px;
+    grid-gap: 10px;
+}
+.content{
+    padding-left: 30px;
+    padding-top: 20px;
+    background-color: #F9F9F9;
+}
+.content .image:hover{
+    scale: 1.2;
+    transition: 0.8s;
+    font-size: 12px;
+    height: 310px;
+}
+.image{
+    border: 1px solid rgb(236, 228, 228);
+    background-color: rgb(251, 251, 251);
+    width: 300px;
+    /* height: 400px; */
+    margin-bottom: 30px;
+    font-size: 10px;
+}
+.image .ytb{
+    color: #767676;
+}
+.image1{
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: left;
+}
+
+
+/* modal creat */
+.modal-CR{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    /* click thi xo ra */
+    display: none;
+
+}
+
+.modal__overaycr{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.4);
+  
+}
+.modal__bodycr{
+    width: 500px;
+    height: 400px;                                                                                                                        
+    background: rgb(252, 252, 252);
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+
+}
+.create__container{
+    margin-bottom: 30px;
+}
+.create__input{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+.create__control{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* modal update */
+
+.modal-UP{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    /* click thi xo ra */
+    display:none;
+
+}
+.modal__overayup{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.4);
+  
+}
+.modal__bodyup{
+    width: 500px;
+    height: 270px;                                                                                                                        
+    background: rgb(252, 252, 252);
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+
+}
+.update__container{
+    margin-bottom: 30px;
+}
+.update__input{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+.update__control{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* modal delete */
+
+.modal-DE{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    /* click thi xo ra */
+    display: none;
+
+}
+.modal__overayde{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.4);
+  
+}
+.modal__bodyde{
+    width: 500px;
+    height: 300px;                                                                                                                        
+    background: rgb(252, 252, 252);
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+
+}
+.delete__container{
+    margin-bottom: 30px;
+}
+.delete__input{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+.delete__control{
+    display: flex;
+    justify-content: space-around;
+}
+
+.divafg{
+    display: flex;
+}

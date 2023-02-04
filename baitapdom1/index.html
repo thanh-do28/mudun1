@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <title>MeeTube</title>
+  </head>
+  <body>
+    <div class="result">
+      <div class="total">
+        <div class="container">
+          <div class="first-part">
+
+            <div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars"></i>
+                </button>
+            <div class="body0">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel"><a id="bars" class="btn" href=""><i class="fa-solid fa-bars"></i></a><img src="./youtube-logo-inkythuatso-01-27-14-06-56.jpg" alt=""></h5>
+                             
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <span class="body1"><i class="fa-solid fa-house"></i></span>
+                        <span class="body2">Trang Chủ</span>
+                    </div>
+                    <div class="offcanvas-body">
+                        <span class="body1"><i class="fa-solid fa-compass"></i></span>
+                        <span class="body2">Khám phá</span>
+                    </div>
+                    <div class="offcanvas-body">
+                        <span class="body1"><i class="fa-solid fa-outdent"></i></span>
+                        <span class="body2">Shorts</span>
+                    </div>
+                    <div class="offcanvas-body">
+                        <span class="body1"><i class="fa-brands fa-youtube"></i>
+                        </span><span class="body2">Kênh đăng kí</span>
+                    </div>
+                    <hr>
+                    <div class="offcanvas-body">
+                        <span class="body1"><i class="fa-brands fa-youtube"></i></span>
+                        <span class="body2">Thư viện</span>
+                    </div>
+                    <div class="offcanvas-body">
+                        <span class="body1"><i class="fa-brands fa-youtube"></i></span>
+                        <span class="body2">Video đã xem</span>
+                    </div>
+                    <div class="offcanvas-body">
+                        <span class="body1"><i class="fa-brands fa-youtube"></i></span>
+                        <span class="body2">Video của bạn</span>
+                    </div>
+                    <div class="offcanvas-body">
+                        <span class="body1"><i class="fa-regular fa-clock"></i></span>
+                        <span class="body2">Xem sau</span>
+                    </div>
+                    <div class="offcanvas-body">
+                        <span class="body1"><i class="fa-solid fa-thumbs-up"></i></span>
+                        <span class="body2">Video đã thích</span>
+                    </div>
+                    <div class="offcanvas-body">
+                        <span class="body1"><i class="fa-solid fa-grip-lines"></i></span>
+                        <span class="body2">Thêm</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div>
+            <a href=""
+              ><img
+                class="img-logo"
+                src="https://brademar.com/wp-content/uploads/2022/05/YouTube-Logo-PNG-2017-%E2%80%93-Now-1.png"
+                alt="img-logo"
+            /></a>
+            <span id="contry code" class="logo">VN</span>
+            </div>
+          </div>
+          <div class="first-part2">
+            <form class="d-flex" role="search">
+              <input
+                class="center"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button id="glass" class="btn btn-magnifying-glass" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button id="mic" class="btn btn-microphone" type="submit">
+                <i class="fa-solid fa-microphone"></i>
+              </button>
+              <i class="fa-solid fa-keyboard"></i>
+            </form>
+          </div>
+          <div class="first-part3">
+            <button id="video" class="btn btn-video" type="submit">
+              <i class="fa-solid fa-video"></i>
+            </button>
+            <div class="notification">
+              <button id="notify" class="btn btn-bell" type="submit">
+                <i class="fa-solid fa-bell"><span class="number">1</span></i>
+              </button>
+            </div>
+            <button id="avatar-btn" class="btn btn-bell" type="submit">
+              <img
+                id="img"
+                src="https://yt3.ggpht.com/yti/AJo0G0kbQFxd-98HsUQetqdnY85VmQ6ZXqjwryVuIont=s88-c-k-c0x00ffffff-no-rj-mo"
+                alt="Hình ảnh đại diện"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        <div class="menu">
+          <div class="home-page">
+            <button>
+              <img
+                src="./img/home.png"
+                alt="home page"
+              />
+              <br />
+              Home page
+            </button>
+          </div>
+          <div class="home-page">
+            <button>
+              <img
+                src="./img/z3662664976554_58852bbe2572ca710975d1bf19fcc793.jpg"
+                alt="discoveries"
+              />
+              <br />
+              Discoveries
+            </button>
+          </div>
+          <div class="home-page">
+            <button>
+              <img src="./img/Shorts.png" alt="shorts" />
+              <br />
+              Shorts
+            </button>
+          </div>
+          <div class="home-page">
+            <button>
+              <img src="./img/subscribe.png" alt="subscribe channel" />
+              <br />
+              Subscribe
+            </button>
+          </div>
+          <div class="home-page">
+            <button>
+              <img
+                src="./img/library.png"
+                alt="library"
+              />
+              <br />
+              Library
+            </button>
+          </div>
+          <div class="home-page" id="dropdown12" >
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img
+                src="./img/kisspng-computer-icons-icon-design-download-vector-settings-icon-5ab0ecb0d9e920.8035250915215443688926.jpg"
+                alt="library"
+              />
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <button class="dropdown-item create123" >create</button>
+                </li>
+                <li>
+                  <button class="dropdown-item update123" >update</button>
+                </li>
+                <li>
+                  <button class="dropdown-item delete123" >delete</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="boder-content">
+          <div class="bottom-item">
+            <div class="all">
+              <button>All</button>
+            </div>
+            <div class="music">
+              <button>Music</button>
+            </div>
+            <div class="combo list">
+              <button>Combo list</button>
+            </div>
+            <div class="direct">
+              <button>Direct</button>
+            </div>
+            <div class="game">
+              <button>Game</button>
+            </div>
+            <div class="just uploaded recently">
+              <button>Just uploaded recently</button>
+            </div>
+            <div class="watched">
+              <button>Watched</button>
+            </div>
+            <div class="new proposal">
+              <button>New proposal</button>
+            </div>
+          </div>
+          <div id="content0" class="content">
+            <!-- <div class="image" id="item1">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/I2NKVzaI6Bs"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  class="img-ytb"
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >Vì Món Quà Chính Là Trên Nụ Cười Em Thôi... Bắt Cóc Con Tim
+                    (Orinn Remix) - Lou Hoàng | Remix Tiktok</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/OrinnRemix" style="color: gray">Orinn Remix</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "98&nbsp;N lượt xem" * 7 ngày trước
+                  </span>
+                </div>
+              </button>
+            </div> -->
+            <!-- <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/uMacmXLsmNg"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span><b>Cách Ngạn - Diêu Lục Nhất || 隔岸 - 姚六一</b></span>
+                <div class="ytb">
+                  <a href="/c/HạcHiên鹤轩" style="color: gray">Hạc Hiên(鹤轩)</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "2&nbsp;Tr lượt xem" * 2 năm trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/Xlvr4A4hmhM"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >Pháo Hồng (H2O Remix) - Đạt Long Vinh | Nụ Cười Ai Nát Lòng
+                    Ngày Mai Em Lấy Chồng Hot TikTok</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/H2ORemix" style="color: gray">H2O Remix</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "11&nbsp;Tr lượt xem" * 1 tháng trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/_wJh2CrolH0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >Baby Can You Kiss Me, Ở Sâu Trong Tâm Trí...Lạc Vào Trong Mơ
+                    - Simon C ft. Wuy 「Jena Remix</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/JenaMusic" style="color: gray">Jena Music</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "2.7&nbsp;Tr lượt xem" * 2 tháng trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/b0UpZkMqn0Y"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >[ Mashup ] Anh Không Làm Gì Đâu Anh Thề × Sunburst - 惰人说梦
+                    (DJ版) | 抖音神曲</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/KewnitMusic" style="color: gray">Kewnit Music</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "218&nbsp;N lượt xem" * 1 năm trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/y576-ONm5II"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span><b>Lyrics || YÊU 5 - Rhymastic</b></span>
+                <div class="ytb">
+                  <a href="/c/JenHoang" style="color: gray">Jen Hoang</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "109&nbsp;Tr lượt xem" * 5 năm trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/_AL4IwHuHlY"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span><b>#Phao #2PhutHon #Kaiz</b></span>
+                <div class="ytb">
+                  <a href="/c/Distraction" style="color: gray">Distraction</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "126&nbsp;Tr lượt xem" * 1 năm trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/99vsVY-A2zE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >DÂN CHƠI XÓM - Rap Việt - MCK x justatee - giọng ca vàng
+                    trong xóm đi vào, dạt sang 1 bên hết đi nào</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/LongMusic" style="color: gray">Long Music</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "4.1&nbsp;Tr lượt xem" * 1 năm trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/uO1dO0CMkIU"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >Em Là Bad Girl Trong Bộ Váy Ngắn (Short Skirt) - VP NIZ X
+                    Trần Huyền Diệp (Prod. CM1X)</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/NIZOfficial" style="color: gray">NIZ Official</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "23&nbsp;Tr lượt xem" * 1 năm trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/jgZkrA8E5do"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >TOULIVER x BINZ - "BIGCITYBOI" (Official Music Video)</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/BinzDaPoet" style="color: gray">Binz Da Poet</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "93&nbsp;Tr lượt xem" * 2 năm trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/3q1VXsfxPWk"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >Quá Khứ Kia Của Anh Chỉ Còn Lại Những Giá Băng Remix ( Slowed
+                    ) Nhạc Remix Hot TikTok 2022</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/BoxChill" style="color: gray">Box Chill</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "102&nbsp;N lượt xem" * 1 tháng trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/5_Y-pOScwww"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >Bên Trên Tầng Lầu Remix|(Tăng Duy Tân)||Nhạc Nền Hot Tik Tok
+                    Cực Gây Nghiện</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/SejuRemixヅ" style="color: gray">Seju Remixヅ</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "41&nbsp;N lượt xem" * 3 tuần trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/fxk1ZT3NC3s"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >YÊU MỘT NGƯỜI CÓ LẼ REMIX - HIẾU DẠ HOA FT THÁI HOÀNG | Ver
+                    Remix Hot Tiktok 2022</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/nganledm" style="color: gray">nganledm</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "157&nbsp;N lượt xem" * 5 tháng trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/a9VDyw-5Ur0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >Phố Đã Lên Đèn (Lofi) - Huyền Tâm Môn | Lyrics Video</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/NhạcLofiChill" style="color: gray"
+                    >Nhạc Lofi Chill</a
+                  >
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "6&nbsp;Tr lượt xem" * 1 năm trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/JgggA8Jtzyg"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >BÔNG HOA CHẲNG THUỘC VỀ TA - NHƯ VIỆT | OFFICIAL LYRICS
+                    VIDEO</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/NhưViệt" style="color: gray">Như Việt</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "51&nbsp;Tr lượt xem" * 3 năm trước
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="image">
+              <button class="image1">
+                <iframe
+                  height="200"
+                  src="https://www.youtube.com/embed/KCXOWNl2iCM"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <br />
+                <span
+                  ><b
+                    >Dù Cho Mai Về Sau (Lofi Ver.) - buitruonglinh x Freak D</b
+                  ></span
+                >
+                <div class="ytb">
+                  <a href="/c/FreakDMusic" style="color: gray">Freak D Music</a>
+                </div>
+                <div>
+                  <span class="like" style="color: gray">
+                    "20&nbsp;Tr lượt xem" * 1 năm trước
+                  </span>
+                </div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- modal create -->
+    <div class="modal-CR" id="modal111">
+      <div class="modal__overaycr">
+        <div class="modal__bodycr">
+          <div class="create__container">
+            <div class="create__header">
+                <h3 class="create__heading">create</h3>
+            </div>
+            <div class="create__group">
+                <input id="inputlinkcreate" class="create__input" placeholder="link bài Nhạc">
+            </div>
+            <div class="create__group">
+                <input id="inputnamecreate" class="create__input" placeholder="tên bài Nhạc">
+            </div>
+            <div class="create__group">
+              <input id="inputclancreate" class="create__input" placeholder="clan">
+            </div>
+            <div class="create__group">
+              <input id="inputlikecreate" class="create__input" placeholder="like">
+            </div>
+          </div>
+          <div  class="create__control">
+            <button class="btn btncreate" id="btn-trolai1"> TRỞ LẠI </button>
+            <button class="btn btn--dangki btncreate1" id="btncreate1"> CREATE </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- modal update -->
+    <div class="modal-UP" id="modal112">
+      <div class="modal__overayup">
+        <div class="modal__bodyup">
+          <div class="update__container">
+            <div class="update__header">
+                <h3 class="update__heading">update</h3>
+            </div>
+            <!-- <select name="" id="selectupdate" onchange="handleUpdate()"> -->
+              <div class="divafg" >
+              <div id="divart">
+              <input id="stt" placeholder="stt">
+              </div>
+              <button class="adf" onclick="button123()">tìm kiếm</button>
+              </div>
+              <!-- onchange="handleUpdate()" -->
+              <!-- <option value="item1">1</option>
+              <option value="item2">2</option>
+              <option value="item3">3</option> -->
+            <!-- </select> -->
+            <div class="update__group">
+                <input id="inputLinkUpdate" class="update__input" placeholder="link bài Nhạc">
+
+            </div>
+            <div class="update__group">
+                <input id="inputNameUpdate" class="update__input" placeholder="tên bài Nhạc">
+            </div>
+          </div>
+          <div  class="update__control">
+            <button class="btn btnupdate" id="btn-trolai2"> TRỞ LẠI </button>
+            <button class="btn btn--dangki" onclick="handleSubmitUpdate()" id="btnupdate1"> UPDATE </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- modal delete -->
+    <div class="modal-DE" id="modal113">
+      <div class="modal__overayde">
+        <div class="modal__bodyde">
+          <div class="delete__container">
+            <div class="delete__header">
+                <h3 class="delete__heading">delete</h3>
+            </div>
+              <div class="divafg" >
+                <div id="divart">
+                <input id="stt1" placeholder="stt">
+                </div>
+                <button class="adf" onclick="button1234()">tìm kiếm</button>
+              </div>
+            <div class="delete__group">
+                <input class="delete__input" id="inputLinkdelete" placeholder="link bài Nhạc">
+
+            </div>
+            <div class="delete__group">
+                <input class="delete__input" id="inputNamedelete" placeholder="tên bài Nhạc">
+            </div>
+          </div>
+          <div  class="delete__control">
+            <button class="btn btndelete" id="btn-trolai3"> TRỞ LẠI </button>
+            <button class="btn btn--dangki btndelete1" onclick="handleSubmitdelete()" id="btndelete1"> DELETE </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="./transferlink.js"></script>
+    <script src="./data.js"></script>
+    <script src="./showdata.js"></script>
+    <script src="./crud.js"></script>
+  </body>
+</html>
